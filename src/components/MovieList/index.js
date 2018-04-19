@@ -9,9 +9,6 @@ const MovieList = ({ movies = [], isRequesting }) => {
 
   return (
     <div className='movie-list'>
-      <Dimmer active={isRequesting}>
-        <Loader />
-      </Dimmer>
       <div>
         {(nowMovies.length > 0) 
           && <h2 className='category-header'>Now Showing</h2>

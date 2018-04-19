@@ -19,7 +19,7 @@ class MovieDetailPage extends React.Component {
   render() {
     return (
       <div className='movie-container'>
-        <Dimmer active={this.props.isRequesting}>
+        <Dimmer page active={this.props.isRequesting}>
           <Loader />
         </Dimmer>
         <Header>CGV Cinema</Header>
