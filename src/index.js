@@ -12,6 +12,4 @@ const store = createStore(reducer, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(sagas);
 
-store.dispatch(onRequest());
-
 render(<App store={store} />, document.getElementById('root'));
