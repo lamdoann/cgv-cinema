@@ -18,7 +18,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div className='movie-container'>
+      <div className="movie-container">
         <Dimmer page active={this.props.isRequesting}>
           <Loader />
         </Dimmer>

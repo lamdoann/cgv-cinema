@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 const Footer = ({ children }) => (
-  <footer className='movie-footer'>
+  <footer className="movie-footer">
     {children}
   </footer>
 );

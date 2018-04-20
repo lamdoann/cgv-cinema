@@ -8,10 +8,10 @@ const MovieList = ({ movies = [], isRequesting }) => {
   const soonMovies = movies.filter(movie => movie).filter(movie => movie.category_id === 1);
 
   return (
-    <div className='movie-list'>
+    <div className="movie-list">
       <div>
         {(nowMovies.length > 0) 
-          && <h2 className='category-header'>Now Showing</h2>
+          && <h2 className="category-header">Now Showing</h2>
         }
         {nowMovies.map(movie => (<MovieItem key={movie.id} {...movie} />))}
       </div>
@@ -20,7 +20,7 @@ const MovieList = ({ movies = [], isRequesting }) => {
           && (
             <React.Fragment>
               <Divider />
-              <h2 className='category-header'>Coming Soon</h2>
+              <h2 className="category-header">Coming Soon</h2>
             </React.Fragment>
           )
         }
